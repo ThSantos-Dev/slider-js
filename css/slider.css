@@ -1,0 +1,76 @@
+/* Slider CSS */
+.slider {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+
+    box-shadow: 0px 10px 30px #000, 0 0 30px 10px;
+}
+
+.slider-button {
+    height: 100%;
+    position: absolute;
+    padding: 0px 20px;
+    
+    display: flex;
+    align-items: center;
+
+    font-size: clamp(1.3rem, 4vw, 3rem);
+    color: transparent;
+
+    cursor: pointer;
+    user-select: none;
+    transition-duration: 0.3s;
+}
+
+.slider:hover .slider-button {
+    color: #fff;
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slider-button:hover {
+    background-color: #000 !important; 
+}
+
+
+#btnProximo {
+    right: 0;
+}
+
+
+.slider-item-container {
+    height: inherit;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow: hidden;
+
+    background-color: aquamarine;
+}
+
+.slider-item {
+    width: 50vw;
+    height: inherit;
+
+    transition: all 0.3s;
+
+    background-color: violet;
+}
+
+.slider-item img{
+    width: inherit;
+    height: inherit;
+
+    object-fit: cover;
+}
+
+.slider-item:first-child {
+    margin-left: -50vw;
+}
